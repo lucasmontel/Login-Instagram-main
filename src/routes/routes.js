@@ -7,7 +7,7 @@ const Users = mongoose.model("users");
 router.get("/login", (req, res) => {
   res.render("index");
 });
-
+ 
 router.post("/home", (req, res) => {
   const newUser = new Users({
     usuario: req.body.user,
