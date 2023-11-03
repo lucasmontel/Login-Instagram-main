@@ -13,11 +13,10 @@ mongoose
   .then(() => {
     console.log("Conectado com Sucesso!");
   })
-  .catch((err) => { 
+  .catch((err) => {
     console.log("Erro ao se conectar: " + err);
   });
 mongoose.Promise = global.Promise;
-
 
 //Body Parser
 app.use(bodyParser.urlencoded({ extended: true }));

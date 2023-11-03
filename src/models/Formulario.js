@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-
 const Users = new Schema({
   usuario: {
     type: String,
@@ -13,4 +12,4 @@ const Users = new Schema({
   },
 });
 
-mongoose.model("users", Users); 
+mongoose.model("users", Users);
