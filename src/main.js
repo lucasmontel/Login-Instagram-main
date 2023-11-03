@@ -33,7 +33,6 @@ app.use(express.static(path.join(__dirname, "/img")));
 //Definindo diretório de arquivos a serem renderizados:
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
 
 const porta = 4000;
 app.listen(porta, () => {
